@@ -1,0 +1,138 @@
+/*menu header, border red*/
+.header {
+    /*border:1px solid rgb(244,66,66);*/
+    min-width: 1200px ;
+    position:relative;
+    top:50px;
+    left:150px;
+    z-index: 1000;
+        
+}
+
+/*menu bar, border green*/
+ul.menu{
+    /*border:1px solid rgb(51,210,12);*/
+    position:relative;
+    margin-bottom:60px;
+}
+
+/*each index inside menu, border black*/
+li.menu {
+    /*border:1px solid rgb(0,0,0);*/
+    display:inline-block;
+    color:rgba(45,20,71,0.7);
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    
+    font-family:"Amatica SC",sans-serif;
+    font-weight:bold;
+    text-align:center;
+    margin:auto 25px;
+    
+
+}
+
+.logo {
+    /*border:1px solid rgb(66,182,23);*/
+    min_width:1200px;
+    height:30%;
+    width:30%;
+    position:relative;
+    margin-left:350px;
+    margin-bottom:20px;
+}
+
+.gallery {
+    /*border:1px solid rgb(66,188,23);*/
+    min-width: 1000px ;
+}
+
+
+img.left, img.right {
+    /*border:1px solid rgb(193,25,157);*/
+    display:inline-block;
+    margin-bottom:40px;
+    margin-top:40px;
+    width:35%;
+    height:35%;
+    border-radius: 0px 40px; 
+}
+
+
+@keyframes shadow{
+    
+    60%{
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+        box-shadow:
+            1px 1px #ffd472,
+            2px 2px #ffd472,
+            3px 3px #ffd472,
+            4px 4px #ffd472;   
+    }
+    
+    70%{
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+        box-shadow:
+            1px 1px #ffd472,
+            2px 2px #ffd472;   
+    }
+    
+    80%{
+        transform: translateX(-3px); 
+        box-shadow:none;
+    }
+    
+    90%{
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+        box-shadow:
+            1px 1px #c6b8f2,
+            2px 2px #c6b8f2; 
+    }
+    
+    100%{
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+        box-shadow:
+            1px 1px #c6b8f2,
+            2px 2px #c6b8f2,
+            3px 3px #c6b8f2,
+            4px 4px #c6b8f2;  
+    }     
+} 
+  
+.shadow :hover{
+    animation: shadow 0.6s forwards; 
+}
+
+
+.left {
+    /*border:1px solid rgb(193,25,157);*/
+    margin-left:160px;
+    margin-right:100px;
+}
+
+.right {
+    margin-right:20px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color:rgba(45,20,71,0.7);
+}
+
+a:hover {
+    text-decoration: none;
+    transition:0.4s ease;
+    color:#f7c56a;
+}
+
+
+
+
+*{
+    box-sizing: border-box;
+    background-color:rgb(255,250,239);
+}
