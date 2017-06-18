@@ -14,9 +14,9 @@
             
             <ul class="menu">
                 <li class="menu">About me</li>
-                <li class="menu"><a href="docs/jewelry%20pieces.html">Jewelry</a></li>
-                <li class="menu"><a href="https://tinahe75.github.io/hezi-handmade/polymer%20clay%20stuff">Polymer Clay</a></li>
-                <li class="menu"><a href="https://tinahe75.github.io/hezi-handmade/">Textiles</a></li>
+                <li class="menu"><a href="jewelry%20pieces.html">Jewelry</a></li>
+                <li class="menu"><a href="polymer%20clay%20stuff.html">Polymer Clay</a></li>
+                <li class="menu"><a href="index.html">Textiles</a></li>
                 <li class="menu">Other</li>
                 <li class="menu">Contact me</li>
             </ul>
