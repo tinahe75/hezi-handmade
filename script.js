@@ -1,17 +1,17 @@
 $(document).ready(function(){
     $('.gallery').css('display','none');
-    $('.gallery').fadeIn(1000);
+    $('.gallery').fadeIn(500);
 
 $('.menu a').click(function(event){
     event.preventDefault();
     newLocation = this.href;
 
-$('.gallery').fadeOut(1000, newpage);
+$('.gallery').fadeOut(500, newpage);
 
 });
 
 function newpage() {
-    //window.location = newLocation;
+    window.location = newLocation;
     $('.gallery').fadeIn(1000);
 
 }
