@@ -12,7 +12,7 @@ $('.gallery').fadeOut(500, newpage);
 
 function newpage() {
     window.location = newLocation;
-    $('.gallery').fadeIn(1000);
+    $('.gallery').fadeIn(500);
 
 }
 
