@@ -2,7 +2,7 @@ $(document).ready(function(){
     $('body').css('display','none');
     $('body').fadeIn(1000);
 
-$('.menu').click(function(event){
+$('.menu a').click(function(event){
     event.preventDefault();
     newLocation = this.href;
 
