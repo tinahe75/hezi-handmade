@@ -11,7 +11,8 @@ $('body').fadeOut(1000, newpage);
 });
 
 function newpage() {
-window.location = newLocation;
+    //window.location = newLocation;
+    $('body').fadeIn(1000);
 
 }
 
