@@ -1,61 +1,168 @@
-/*menu header, border red*/
-.header {
+@font-face {
+    font-family:SourceSerif;
+    src:url("fonts/SourceSerifPro-Regular.otf");
+}
+
+@font-face {
+    font-family:Icomoon;
+    src:url("fonts/icomoon.ttf");
+}
+
+@font-face {
+    font-family:Quicksand;
+    src:url("fonts/Quicksand-Regular.otf");
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+
+.page_body {
+    width:auto;
+    min-width: 1100px;
+    min-height:805px;
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("papier2.jpg");
+    background-repeat: repeat;
     /*border:1px solid rgb(244,66,66);*/
-    min-width: 1200px ;
-    position:relative;
-    top:50px;
-    left:150px;
-    z-index: 1000;
-        
 }
 
-/*menu bar, border green*/
-ul.menu{
+
+.header_background {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(255,250,239);
+    border-bottom: 5px dashed rgba(109, 54, 165,0.2);
+    /*border:1px solid rgb(244,66,66);*/
+}
+
+
+/*HEADER(LOGO+MENU) FLEX BOX, border red*/
+.header {
+    width:1100px;
+    display:flex;
+    display:-webkit-flex;
+    flex-direction:column;
+    -webkit-flex-direction:column;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+    margin-top:75px; 
+    /*border:1px solid rgb(244,66,66);*/
+    background-color:rgb(255,250,239);
+}
+
+
+/*MENU BAR FLEX BOX, border green*/
+.menu_bar{
+    width:1100px;
+    display:flex;
+    display:-webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction:row;
+    justify-content:space-between;
+    -webkit-justify-content:space-between;
+    align-items: center;
+    -webkit-align-items:center;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    margin-bottom:15px;
+    background-color:rgb(255,250,239);
     /*border:1px solid rgb(51,210,12);*/
-    position:relative;
-    margin-bottom:60px;
 }
 
-/*each index inside menu, border black*/
-li.menu {
-    /*border:1px solid rgb(0,0,0);*/
-    display:inline-block;
-    color:rgba(45,20,71,0.7);
-    font-size: 30px;
-    letter-spacing: 0.1em;
-    
-    font-family:"Amatica SC",sans-serif;
-    font-weight:bold;
-    text-align:center;
-    margin:auto 25px;
-    
 
+/*MENU FLEX BOX ITEMS, border black*/
+.menu_item {
+    color:rgba(45,20,71,0.7);
+    font-size: 23px;
+    word-spacing: 0.2em;
+    font-family:SourceSerif,sans-serif;
+    font-weight:900;
+    /*border:1px solid rgb(0,0,0);*/   
+}
+
+.icon {
+    color:rgba(109, 54, 165,0.5);
+    font-size: 28px;
+    font-family:Icomoon,serif;
 }
 
 .logo {
+    width:400px;
+    margin-bottom:65px;
     /*border:1px solid rgb(66,182,23);*/
-    min_width:1200px;
-    height:30%;
-    width:30%;
-    position:relative;
-    margin-left:350px;
-    margin-bottom:20px;
 }
 
+
+/* GALLERY FLEX BOX*/
 .gallery {
+    width:1100px;
+    display:flex;
+    display:-webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    justify-content:space-between;
+    -webkit-justify-content:space-between;
+    align-items:flex-start;
+    -webkit-align-items:flex-start;
+    min-width: 1000px;
+    margin-bottom: 70px;
     /*border:1px solid rgb(66,188,23);*/
-    min-width: 1000px ;
+    background-image: url("papier2.jpg");
+    background-repeat: repeat;
+    margin-top:40px;
 }
 
+/*LEFT HALF GALLERY FLEX BOX*/
+.gallery_left {
+    width:45%;
+    display:flex;
+    display:-webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+    margin-right:15px;
+    /*border:1px solid rgb(66,188,23);*/
+    background-image: image("papier2.jpg");
+    background-repeat: repeat;
+}
 
-img.left, img.right {
-    /*border:1px solid rgb(193,25,157);*/
-    display:inline-block;
+/*RIGHT HALF GALLERY FLEX BOX*/
+.gallery_right {
+    width:45%;
+    display:flex;
+    display:-webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    justify-content:center;
+    -webit-justify-content:center;
+    align-items: center;
+    -webkit-align-items: center;
+    margin-left:15px;
+    /*border:1px solid rgb(206,8,13);*/
+    background-image: image("papier2.jpg");
+    background-repeat: repeat;
+
+}
+
+.pic {
     margin-bottom:40px;
     margin-top:40px;
-    width:35%;
-    height:35%;
-    border-radius: 0px 40px; 
+    width:100%;
+    border-radius: 0px 40px;
+    background-image: image("papier2.jpg");
+    background-repeat: repeat;
 }
 
 
@@ -108,16 +215,7 @@ img.left, img.right {
 }
 
 
-.left {
-    /*border:1px solid rgb(193,25,157);*/
-    margin-left:160px;
-    margin-right:100px;
-}
-
-.right {
-    margin-right:20px;
-}
-
+/* LINKS IN MENU*/
 a:link, a:visited {
     text-decoration: none;
     color:rgba(45,20,71,0.7);
@@ -129,10 +227,32 @@ a:hover {
     color:#f7c56a;
 }
 
-
-
-
-*{
-    box-sizing: border-box;
-    background-color:rgb(255,250,239);
+.contact_page{
+    width:1100px;
+    display:flex;
+    display:-webkit-flex;
+    flex-direction:column;
+    -webkit-flex-direction:column;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+    margin-top:100px;
 }
+
+#thank_you {
+    color:rgba(45,20,71,0.7);
+    font-size: 40px;
+    word-spacing: 0.1em;
+    font-family:Quicksand,sans-serif;
+    margin-bottom: 120px;
+}
+
+#contact_info {
+    color:rgba(45,20,71,0.7);
+    font-size: 26px;
+    word-spacing: 0.1em;
+    font-family:Quicksand,sans-serif;
+}
+
+
