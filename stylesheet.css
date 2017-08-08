@@ -13,6 +13,11 @@
     src:url("fonts/Quicksand-Regular.otf");
 }
 
+@font-face{
+    font-family:BN;
+    src:url("fonts/Baron Neue.otf");
+}
+
 *{
     box-sizing: border-box;
     margin:0;
@@ -227,6 +232,7 @@ a:hover {
     color:#f7c56a;
 }
 
+/* CONTACT ME PAGE*/
 .contact_page{
     width:1100px;
     display:flex;
@@ -256,3 +262,66 @@ a:hover {
 }
 
 
+/* ABOUT ME PAGE*/
+.about_page{
+    width:1100px;
+    display:flex;
+    display:-webkit-flex;
+    flex-direction:row;
+    -webkit-flex-direction:row;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
+    margin-top:75px;
+    margin-bottom:70px;
+}
+
+.portrait_label{
+    width:40%;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin-right:50px;
+    color:rgba(45,20,71,0.7);
+    font-size: 19px;
+    word-spacing: 0.1em;
+    text-align: center;
+    font-family:Quicksand,sans-serif;
+    margin-left: 20px;
+}
+
+
+#portrait{
+    width:100%;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+
+.about_info{
+    width:59%;
+    margin-left:15px;
+}
+
+#blurb{
+    color:rgba(45,20,71,0.7);
+    font-size: 26px;
+    word-spacing: 0.1em;
+    font-family:Quicksand,sans-serif;
+    margin-left:20px;
+    margin-right:20px;
+    line-height: 135%;  
+}
+
+#title{
+    color:rgba(45,20,71,0.7);
+    font-size: 35px;
+    word-spacing: 0.2em;
+    letter-spacing: 0.05em;
+    font-family:SourceSerif,sans-serif;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top:-10px;
+}
