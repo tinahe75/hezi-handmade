@@ -252,6 +252,8 @@ a:hover {
     word-spacing: 0.1em;
     font-family:Quicksand,sans-serif;
     margin-bottom: 120px;
+    line-height: 175%;
+    text-align: center;
 }
 
 #contact_info {
