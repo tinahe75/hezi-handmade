@@ -234,6 +234,7 @@ a:hover {
 
 /* CONTACT ME PAGE*/
 .contact_page{
+    border:1px solid rgb(206,8,13);
     width:1100px;
     display:flex;
     display:-webkit-flex;
