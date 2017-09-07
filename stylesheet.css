@@ -170,11 +170,50 @@
     background-repeat: repeat;
 }
 
+@-webkit-keyframes shadow{
+    
+    60%{
+        -webkit-transform: translateX(-3px);
+        -webkit-box-shadow:
+            1px 1px #ffd472,
+            2px 2px #ffd472,
+            3px 3px #ffd472,
+            4px 4px #ffd472;   
+    }
+    
+    70%{
+        -webkit-transform: translateX(-3px);
+        -webkit-box-shadow:
+            1px 1px #ffd472,
+            2px 2px #ffd472;   
+    }
+    
+    80%{
+        -webkit-transform: translateX(-3px); 
+        -webkit-box-shadow:none;
+    }
+    
+    90%{
+        -webkit-transform: translateX(-3px);
+        -webkit-box-shadow:
+            1px 1px #c6b8f2,
+            2px 2px #c6b8f2; 
+    }
+    
+    100%{
+        -webkit-transform: translateX(-3px);
+        -webkit-box-shadow:
+            1px 1px #c6b8f2,
+            2px 2px #c6b8f2,
+            3px 3px #c6b8f2,
+            4px 4px #c6b8f2;  
+    }     
+} 
+
 
 @keyframes shadow{
     
     60%{
-        -webkit-transform: translateX(-3px);
         transform: translateX(-3px);
         box-shadow:
             1px 1px #ffd472,
@@ -184,7 +223,6 @@
     }
     
     70%{
-        -webkit-transform: translateX(-3px);
         transform: translateX(-3px);
         box-shadow:
             1px 1px #ffd472,
@@ -197,7 +235,6 @@
     }
     
     90%{
-        -webkit-transform: translateX(-3px);
         transform: translateX(-3px);
         box-shadow:
             1px 1px #c6b8f2,
@@ -205,7 +242,6 @@
     }
     
     100%{
-        -webkit-transform: translateX(-3px);
         transform: translateX(-3px);
         box-shadow:
             1px 1px #c6b8f2,
@@ -216,7 +252,8 @@
 } 
   
 .shadow :hover{
-    animation: shadow 0.6s forwards; 
+    -webkit-animation: shadow 0.6s forwards;
+    animation: shadow 0.6s forwards;
 }
 
 
@@ -261,7 +298,7 @@ a:hover {
     font-size: 26px;
     word-spacing: 0.1em;
     font-family:Quicksand,sans-serif;
-    margin-bottom:150px;
+    margin-bottom:100px;
 }
 
 
