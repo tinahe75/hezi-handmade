@@ -234,7 +234,6 @@ a:hover {
 
 /* CONTACT ME PAGE*/
 .contact_page{
-    border:1px solid rgb(206,8,13);
     width:1100px;
     display:flex;
     display:-webkit-flex;
@@ -245,7 +244,6 @@ a:hover {
     align-items: center;
     -webkit-align-items: center;
     margin-top:100px;
-    margin-bottom: 60px;
 }
 
 #thank_you {
@@ -263,7 +261,7 @@ a:hover {
     font-size: 26px;
     word-spacing: 0.1em;
     font-family:Quicksand,sans-serif;
-    margin-bottom:60px;
+    margin-bottom:100px;
 }
 
 
